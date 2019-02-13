@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title>Task Manager</title>
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" /><!-- SCROLLS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="/css/home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- SPELLS -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="../TaskManScript/script.js"></script>
+    
+</head>
+<body>
+    
+        <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" >Task Manager</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">                 
+               
+                    <% if(Session["username"]==""){ %>
+                    <li id="home"><a href="/Default.aspx"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="/pages/register.aspx"><i class="fa fa-book"></i> Register</a></li>
+                    <li><a href="/pages/about.aspx"><i class="fa fa-shield"></i> About</a></li>
+                    <% } %>
+                    <% else{ %>
+                      <li><a href="/pages/notes.aspx"><i class="fa fa-comment"></i>  Tasks</a></li> 
+                    <li><a href="/pages/settings.aspx"><i class="fa fa-cog"></i>  Account Settings</a></li> 
+                    <li><a href="/pages/about.aspx"><i class="fa fa-shield"></i> About</a></li>
+                    <li><a href="/pages/logout.aspx"" ><i class="fa fa-sign-out" aria-hidden="true"></i>  Logout</a></li> 
+                    <% } %>
+                       
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <asp:Label runat="server" ID="loggedUserNameLabel" Visible="false"  ></asp:Label>
+        <div class="container body-content" >
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+               
+            </footer>
+        </div>
+</body>
+</html>
