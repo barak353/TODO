@@ -6,11 +6,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
     <script src="../TaskManScript/app.js"></script>
    
-       <div class="jumbotron" style="background-color:#ad6ed6" >
-           
-                    <h1>Task Manager</h1>
-                  <p class="lead">You can manage your own tasks easily</p>
-</div>
+
+                  <p class="lead">Manage your tasks</p>
+
 
             </div>
     <div class="container" >
@@ -32,7 +30,7 @@
                                         <input type="text" class="  search-query form-control" placeholder="Search" ng-model="searchTask" />
                                         <span class="input-group-btn">
                                             <button class="btn btn-danger" type="button">
-                                                <span class=" glyphicon glyphicon-search"></span>
+                                                <span style="color:#e62e00" class=" glyphicon glyphicon-search"></span>
                                             </button>
                                          
                                         </span>
@@ -41,7 +39,7 @@
                                 </div> 
                                 <div>
                                      <div class="col-md-2 text-center ">
-                                    <button type="button" class="btn btn-sm btn-primary btn-create"  style="background-color:#6f0f62"  onclick="newNote()">New Task To List</button>
+                                    <button type="button" class="btn btn-sm btn-primary btn-create"  style="background-color:#e62e00"  onclick="newNote()">New Task</button>
                                 </div>
                                 </div>
                                 
@@ -49,16 +47,16 @@
                             <div id="newNote" class="row" style="display: none">
                                 <div id="custom-search-input">
                                     <div class="input-group col-md-10 col-xs-8">
-                                        <input type="text" class=" form-control" placeholder="Task Name" ng-model="newNoteContent" id="newNoteContent"/>
-                                        <input type="text" class=" form-control" placeholder="When?" style="display: inline-block; margin-top: 10px"  ng-model="newNoteSTime" id="newNoteSTime"/>
-                                        <input type="text" class=" form-control" placeholder="Until When?" ng-model="newNoteETime" style="display: inline-block; margin-top: 10px" id="newNoteETime"/>
+                                        <input type="text" class=" form-control" placeholder="Task Description" ng-model="newNoteContent" id="newNoteContent"/>
+                                        <input type="text" class=" form-control" placeholder="From When?" style="display: inline-block; margin-top: 10px"  ng-model="newNoteSTime" id="newNoteSTime"/>
+                                        <input type="text" class=" form-control" placeholder="To When?" ng-model="newNoteETime" style="display: inline-block; margin-top: 10px" id="newNoteETime"/>
                                         <input type="text" class=" form-control" placeholder="Where?" ng-model="newNotePlace" style="display: inline-block; margin-top: 10px" id="newNotePlace"/>
                                     </div>
 
                                 </div>
                                 <div class="col-md-2 text-right col-xs-2">
                                     <center>
-                                    <button type="button" style="background-color:#ad6ed6" class="btn btn-sm btn-primary btn-create" ng-click="newNote(newNoteContent,newNoteSTime,newNoteETime,newNotePlace)" onclick="cancelNewNote()" >Add Task</button>
+                                    <button type="button" style="background-color:#e62e00" class="btn btn-sm btn-primary btn-create" ng-click="newNote(newNoteContent,newNoteSTime,newNoteETime,newNotePlace)" onclick="cancelNewNote()" >Add Task</button>
                                     <button style="background-color:#000000" type="button" class="btn btn-sm btn-danger btn-create" ng-click="cancelNewNote()" onclick="cancelNewNote()">Cancel</button> 
                                     </center>
                                 </div>
@@ -78,26 +76,24 @@
                             </colgroup>
                             <thead>
                                 <tr>
-
-                                    <th><a class="fa fa-caret"></a> Edit or Delete</th>
+                                 <th></th>
                                     <th class="">
                                         <a href="#" ng-click="sortType = 'id'; sortReverse = !sortReverse">ID
                                 <span ng-show="sortType == 'id' && !sortReverse" class="fa fa-caret"></span>
                                             <span ng-show="sortType == 'id' && sortReverse" class="fa fa-caret-up"></span>
                                         </a></th>
                                     <th>
-                                        <a href="#" ng-click="sortType = 'note'; sortReverse = !sortReverse">Task
+                                        <a href="#" ng-click="sortType = 'note'; sortReverse = !sortReverse">Task Description
                                 <span ng-show="sortType == 'note' && !sortReverse" class="fa fa-caret-down"></span>
                                             <span ng-show="sortType == 'note' && sortReverse" class="fa fa-caret-up"></span>
                                         </a></th>
+                                    <th><a class="fa fa-caret"> Edit or Delete</a></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr ng-repeat="note in tasks | orderBy:sortType:sortReverse | filter: searchTask | filter:paginate">
-                                    <td align="center">
-                                        <a class="btn btn-default"  onclick="EditMode(this,1)"><em class="fa fa-pencil"></em></a>
-                                        <a class="btn btn-danger" style="background-color:#6f0f62" ng-click="delete(note.id)"><em class="fa fa-trash"></em></a>
-                                        <a class="btn btn-default" onclick="EditMode(this,2)" ng-click="save(note.id,note.note,note.startTime,note.endTime,note.place)" style="display: none;" ><em class="fa fa-save"></em></a>
+                                    <td>
+                                        <em class="fa fa-check fa-lg checker checkers" ng-click="check(note.id,note.check,$event)" ng-model="note.check" ng-value="note.check" ng-style="note.check === 1 ? { color:'#e62e00' } : { 'color': 'gray' }" ></em>
                                     </td>
                                     <td class="">
                                         <span>{{$index+1}}</span>
@@ -118,9 +114,13 @@
                                         <input ng-model="note.place" type="text" style="display: none; margin-top: 4px" />
                                             
                                     </td>
-                                    <td>
-                                        <em class="fa fa-check fa-lg checker checkers" ng-click="check(note.id,note.check,$event)" ng-model="note.check" ng-value="note.check" ng-style="note.check === 1 ? { color:'#ad6ed6' } : { 'color': 'black' }" ></em>
+                                    <td align="center">
+                                        <a class="btn btn-default"  onclick="EditMode(this,1)"><em class="fa fa-edit"></em></a>
+                                        <a class="btn btn-danger" style="background-color:#e62e00" ng-click="delete(note.id)"><em class="fa fa-trash"></em></a>
+                                        <a class="btn btn-default" onclick="EditMode(this,2)" ng-click="save(note.id,note.note,note.startTime,note.endTime,note.place)" style="display: none;" ><em class="fa fa-save"></em></a>
                                     </td>
+
+
                                 </tr>
 
 
@@ -160,9 +160,9 @@
                 $(el).hide();
                 $(el).next().hide();
                 $(el).next().next().show();
-                $(el).parent().next().next().find("span").hide();
-                $(el).parent().next().next().find("input").show();
-                $(el).parent().next().next().find("label").show();
+                $(el).parent().prev().find("span").hide();
+                $(el).parent().prev().find("input").show();
+                $(el).parent().prev().find("label").show();
                 
             } else if (isEdit == 2) {
                 $(el).hide();

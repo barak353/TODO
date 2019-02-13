@@ -12,11 +12,11 @@
    
                 <body style="background-image : url(images/bbk.png)">
                 <form runat="server" action="" method="post" name="Login_Form" class="form-signin" style="background-image : url(images/bk.jpg)" >
-                    <h3 class="form-signin-heading">Login to TODO</h3>
                     <!--<hr class="colorgraph">-->
                     <br>
+                    <h1 style="color:red" class="form-signin-heading">Welcome to myTask</h1>
                     <center>
-                    <input type="text" class="form-control" name="Username" placeholder="Username" required="" autofocus="" />
+                    <input type="text" class="form-control" name="Username" placeholder="User Name" required="" autofocus="" />
                     <input type="password" class="form-control" name="Password" placeholder="Password" required="" />
 
                     <asp:Button runat="server" class="btn btn-lg btn-primary btn-block" style="background-color:#e62e00" name="Submit" value="Login" type="Submit" Text="Login" OnClick="Login" />

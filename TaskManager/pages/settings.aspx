@@ -67,8 +67,8 @@
     <div class = "container">
 	<div class="wrapper">
 		<div class="form-signin" ng-app="updateApp" ng-controller="mainController">       
-		    <h3 class="form-signin-heading">Update Your Account</h3>
-			  <hr class="colorgraph">
+		    <h3 style="color:red" class="form-signin-heading">Update Your Account Details</h3>
+			  <hr style="color:red" class="line">
 			  
 			   <input runat="Server" ng-model="username" type="text" class="form-control" id="username" placeholder="Username" required="" autofocus="" disabled />
 			   <input runat="Server" ng-model="fullname" type="text" class="form-control" id="fullname" placeholder="Full Name" required="" autofocus="" />
@@ -77,7 +77,7 @@
 			   <input ng-model="password" type="password" class="form-control" name="password" placeholder="New Password" autofocus="" />
 			   <input ng-model="repassword" type="password" class="form-control" name="repassword" placeholder="New Password Verification" autofocus="" />
 			 
-			  <button class="btn btn-lg btn-primary btn-block" style="background-color:#6f0f62" name="Submit" ng-click="updateInfo()" value="Update" type="Submit">Update!</button>  			
+			  <button class="btn btn-lg btn-primary btn-block" style="background-color:#e62e00" name="Submit" ng-click="updateInfo()" value="Update" type="Submit">Update</button>  			
 		</div>			
 	</div>
 </div>
