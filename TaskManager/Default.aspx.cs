@@ -62,7 +62,7 @@ public partial class _Default : Page
             {
                 login.Visible = true;
                 succMsg.Visible = false;
-                alertMsg.Visible = true; //display alert massege to the user
+                //alertMsg.Visible = true; //display alert massege to the user
             }
         }
         sqlConnection1.Close();

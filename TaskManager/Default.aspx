@@ -12,26 +12,7 @@
    
                 <body style="background-image : url(images/bbk.png)">
 
-                <form runat="server" action="" method="post" name="Login_Form" class="form-signin" style="background-image : url(images/bk.jpg)" >
-                    <!--<hr class="colorgraph">-->
-                    <br>
-                    <h1 style="color:red" class="form-signin-heading">Welcome to myTask</h1>
-                    <center>
-                    <input type="text" class="form-control" name="Username" placeholder="User Name" required="" autofocus="" />
-                    <input type="password" class="form-control" name="Password" placeholder="Password" required="" />
 
-                    <asp:Button runat="server" class="btn btn-lg btn-primary btn-block" style="background-color:#e62e00" name="Submit" value="Login" type="Submit" Text="Login" OnClick="Login" />
-                    </center>
-                    <asp:Panel runat="server" ID="alertMsg" Visible="false">
-                        <div class="alert alert-dismissible alert-danger">
-                            <button type="button" class="close" data-dismiss="alert">&times;</button>
-                            <strong>User name or password are incorrect </strong>
-                            <br />
-                            please again.
-                        </div>
-                    </asp:Panel>
-
-                </form>
          </body>
     </html>
     
