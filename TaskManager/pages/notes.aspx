@@ -93,7 +93,7 @@
                             <tbody>
                                 <tr ng-repeat="note in tasks | orderBy:sortType:sortReverse | filter: searchTask | filter:paginate">
                                     <td>
-                                        <em class="fa fa-check fa-lg checker checkers" ng-click="check(note.id,note.check,$event)" ng-model="note.check" ng-value="note.check" ng-style="note.check === 1 ? { color:'#e62e00' } : { 'color': 'gray' }" ></em>
+                                        <em class="fa fa-check-circle" style="font-size:48px;color:red" ng-click="check(note.id,note.check,$event)" ng-model="note.check" ng-value="note.check" ng-style="note.check === 1 ? { color:'#e62e00' } : { 'color': 'gray' }" ></em>
                                     </td>
                                     <td class="">
                                         <span>{{$index+1}}</span>
