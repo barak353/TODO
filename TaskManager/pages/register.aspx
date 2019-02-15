@@ -12,7 +12,7 @@
 
             <form style="background-image : url(images/bk.png)" runat="server" id="registerForm" method="post" name="Register_Form" class="form-signin" >
                 <asp:ScriptManager ID="scriptM" runat="server" EnablePageMethods="true" />
-                <h3 class="form-signin-heading">Register to your Task Manager</h3>
+                <h3 class="form-signin-heading">Sign Up</h3>
                 <hr class="colorgraph">
                 <center>
                 <input type="text" id="regUsername" class="form-control" name="Username" placeholder="Username" required="" autofocus="" />
