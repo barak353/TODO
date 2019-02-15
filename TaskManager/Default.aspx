@@ -11,6 +11,7 @@
                  <html>
    
                 <body style="background-image : url(images/bbk.png)">
+
                 <form runat="server" action="" method="post" name="Login_Form" class="form-signin" style="background-image : url(images/bk.jpg)" >
                     <!--<hr class="colorgraph">-->
                     <br>
