@@ -48,6 +48,7 @@
                 <% else{ %>
                 <li><a href="/pages/notes.aspx"><i class="fa fa-home"></i>  Home</a></li> 
                 <li><a href="/pages/settings.aspx"><i class="fa fa-user"></i>  Profile</a></li> 
+                <li><a href="/pages/calendar.aspx"><i class="fa fa-user"></i>  Calendar</a></li> 
                 <li><a href="/pages/about.aspx"><i class="fa fa-shield"></i> About</a></li>
                 <% } %>
             </ul>
