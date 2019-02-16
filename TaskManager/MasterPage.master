@@ -44,7 +44,6 @@
                 <li><a href="/Default.aspx"><i class="fa fa-home"></i>  Home</a></li>
                 <li><a href="/pages/register.aspx"><i class="fa fa-user"></i>  Register</a></li> 
                 <li><a href="/pages/about.aspx"><i class="fa fa-shield"></i> About</a></li>
-
                 <% } %>
                 <% else{ %>
                 <li><a href="/pages/notes.aspx"><i class="fa fa-home"></i>  Home</a></li> 
@@ -52,21 +51,14 @@
                 <li><a href="/pages/about.aspx"><i class="fa fa-shield"></i> About</a></li>
                 <% } %>
             </ul>
-
-
-            <div class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right">
                 <% if(Session["username"]!=""){ %>
                 <li><a href="/pages/logout.aspx"" ><i class="fa fa-sign-out" aria-hidden="true"></i>  Logout</a></li> 
                 <% } %>
-                <% else{ %>
-                <form action="/action_page.php">
-                <input type="text" placeholder="Username" name="username">
-                <input type="text" placeholder="Password" name="psw">
-                <button type="submit">Login</button>
-                </form>
-                 <% } %>
-            </div>
 
+            </ul>
+
+        </div>
     </nav>
 
 
