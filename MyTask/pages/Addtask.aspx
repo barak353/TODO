@@ -14,7 +14,7 @@
                     <form runat="server" action="" method="post" name="Login_Form" class="form-signin" style="background-image: url(images/bk.jpg)">
                         <!--<hr class="colorgraph">-->
 
-                        <h1 style="color: red" class="form-signin-heading">Add Task</h1>
+                        <h1 style="color: red" class="form-signin-heading">Create new Task</h1>
                         <center>
                          <input type="text" class=" form-control" name="description" placeholder="Task Description" id="newNoteContent"/>
                         
