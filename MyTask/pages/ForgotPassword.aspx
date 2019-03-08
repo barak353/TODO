@@ -13,9 +13,9 @@
                     <form runat="server" action="" method="post" name="Login_Form" class="form-signin" style="background-image : url(images/bk.jpg)" >
                     <!--<hr class="colorgraph">-->
                     <br>
-                    <h1 style="color:red" class="form-signin-heading">Enter username to Reset Password</h1>
+                    <h3 style="color:red" class="form-signin-heading">Enter your user name to reset your password</h3>
                     <center>
-                    <input type="text" id="regUsername" class="form-control" name="Username" placeholder="Username" required="" autofocus="" />
+                    <input type="text" id="regUsername" class="form-control" name="Username" placeholder="Insert user name" required="" autofocus="" />
 
                     <asp:Button ID="Submit" runat="server" name="Submit" OnClick="Submit_Click" CommandName="ThisBtnClick" Text="Submit" class="btn btn-lg btn-primary btn-block" style="background-color:#e62e00" />
                   
