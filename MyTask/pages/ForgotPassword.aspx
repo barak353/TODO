@@ -2,8 +2,8 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="Server">
 
-    <script src="../TaskManScript/register.js"></script>
-    <script src="../TaskManScript/script.js"></script>
+    <script src="../MyTaskScript/register.js"></script>
+    <script src="../MyTaskScript/script.js"></script>
     <div class="container">
         <div class="wrapper">
             <html>

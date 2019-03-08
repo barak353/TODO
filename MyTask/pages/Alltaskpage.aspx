@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="../css/notes.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
-    <script src="../TaskManScript/app.js"></script>
+    <script src="../MyTaskScript/app.js"></script>
 
 
     <p class="lead">Manage your tasks</p>

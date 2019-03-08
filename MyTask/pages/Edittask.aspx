@@ -2,7 +2,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <!--<%@ MasterType VirtualPath="~/MasterPage.master" %>-->
-    <script src="TaskManScript/script.js"></script>
+    <script src="MyTaskScript/script.js"></script>
     <link rel="stylesheet" href="css/home.css">
     <asp:Panel runat="server" ID="addtask" Visible="true">
         <div class="container">
