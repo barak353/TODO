@@ -3,18 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2011
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TaskManager", ".", "{E6D18D3C-CD53-466A-AE98-A51ECF9C7B43}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MyTask", ".", "{E6D18D3C-CD53-466A-AE98-A51ECF9C7B43}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_50229"
-		Debug.AspNetCompiler.PhysicalPath = "..\TaskManager\"
+		Debug.AspNetCompiler.PhysicalPath = "..\MyTask\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50229\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/localhost_50229"
-		Release.AspNetCompiler.PhysicalPath = "..\TaskManager\"
+		Release.AspNetCompiler.PhysicalPath = "..\MyTask\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50229\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
