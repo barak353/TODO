@@ -30,7 +30,7 @@
                                 <asp:ListItem Value="Normal" Text="Normal"></asp:ListItem>
                                 <asp:ListItem Value="Low" Text="Low"></asp:ListItem>
                             </asp:DropDownList>
-                       <asp:Button runat="server" class="btn btn-lg btn-primary btn-block" OnClick="AddTask" style="background-color:#e62e00" name="Submit" value="Add" type="Submit" Text="Add"></asp:Button>
+                       <asp:Button runat="server" class="btn btn-lg btn-primary btn-block" OnClick="AddTask" style="background-color:#e62e00" name="Submit" value="Create" type="Submit" Text="Create"></asp:Button>
                  
                       
                         
