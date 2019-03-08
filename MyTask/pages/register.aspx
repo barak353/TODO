@@ -10,15 +10,15 @@
                 <body style="background-image: url(../images/bbk.png)">
                     <form style="background-image: url(images/bk.png)" runat="server" id="registerForm" method="post" name="Register_Form" class="form-signin">
                 <asp:ScriptManager ID="scriptM" runat="server" EnablePageMethods="true" />
-                <h3 class="form-signin-heading">Register to your Task Manager</h3>
+                <h3 class="form-signin-heading">Register to MyTask</h3>
                 
                 <center>
-                <input type="text" id="regUsername" class="form-control" name="Username" placeholder="Username" required="" autofocus="" />
-                <input type="text" id="regFullName" class="form-control" name="FullName" placeholder="Full Name" required="" autofocus="" />
-                <input type="email" id="regEmail" class="form-control" name="Email" placeholder="Email" required="" autofocus="" />
+                <input type="text" id="regUsername" class="form-control" name="Username" placeholder="Insert user name" required="" autofocus="" />
+                <input type="text" id="regFullName" class="form-control" name="FullName" placeholder="Insert full Name" required="" autofocus="" />
+                <input type="email" id="regEmail" class="form-control" name="Email" placeholder="Insert email" required="" autofocus="" />
                 <br>
-                <input type="password" id="regPassword" class="form-control" name="password" placeholder="Password" required autofocus="" />
-                <input type="password" id="regRePassword" class="form-control" name="repassword" placeholder="Password Verification" required autofocus="" />
+                <input type="password" id="regPassword" class="form-control" name="password" placeholder="Insert password" required autofocus="" />
+                <input type="password" id="regRePassword" class="form-control" name="repassword" placeholder="Insert password again" required autofocus="" />
                 <asp:Button ID="SubmitBut" runat="server" name="Submit" CommandName="ThisBtnClick" Text="Register" OnClick="CreateUser_Click" class="btn btn-lg btn-primary btn-block" style="background-color:#e62e00" />
                 </center>
                 <asp:Panel runat="server" ID="alertMsg" Visible="false">

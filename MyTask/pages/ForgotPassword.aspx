@@ -17,7 +17,7 @@
                     <center>
                     <input type="text" id="regUsername" class="form-control" name="Username" placeholder="Username" required="" autofocus="" />
 
-                    <asp:Button ID="Submit" runat="server" name="Submit" OnClick="Submit_Click" CommandName="ThisBtnClick" Text="Submit" class="btn btn-lg btn-primary btn-block" style="background-color:#6f0f62" />
+                    <asp:Button ID="Submit" runat="server" name="Submit" OnClick="Submit_Click" CommandName="ThisBtnClick" Text="Submit" class="btn btn-lg btn-primary btn-block" style="background-color:#e62e00" />
                   
                     </center>
                     <asp:Panel runat="server" ID="email" Visible="false">

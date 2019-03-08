@@ -17,8 +17,8 @@
                     <br>
                     <h1 style="color:red" class="form-signin-heading">Welcome to myTask</h1>
                     <center>
-                    <input type="text" class="form-control" name="Username" placeholder="User Name" required="" autofocus="" />
-                    <input type="password" class="form-control" name="Password" placeholder="Password" required="" />
+                    <input type="text" class="form-control" name="Username" placeholder="Insert user name" required="" autofocus="" />
+                    <input type="password" class="form-control" name="Password" placeholder="Insert password" required="" />
 
                     <asp:Button runat="server" class="btn btn-lg btn-primary btn-block" style="background-color:#e62e00" name="Submit" value="Login" type="Submit" Text="Login" OnClick="Login" />
                  
