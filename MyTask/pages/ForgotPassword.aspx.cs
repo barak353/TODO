@@ -54,7 +54,7 @@ public partial class pages_ForgotPassword : System.Web.UI.Page
 
     private void PasswordResetEmail(string ToEmail, string UserName, string UniqueId)
     {
-        MailMessage mailMessage = new MailMessage("hasnainraza9699@gmail.com", ToEmail);
+        MailMessage mailMessage = new MailMessage("taskmanagerautosending@gmail.com", ToEmail);
 
         StringBuilder sbEmailBody = new StringBuilder();
         sbEmailBody.Append("Dear " + UserName + "<br/<br/>");
@@ -72,8 +72,8 @@ public partial class pages_ForgotPassword : System.Web.UI.Page
 
         smtpClient.Credentials = new System.Net.NetworkCredential()
         {
-            UserName = "hasnainraza9699@gmail.com",
-            Password = "hassan298"
+            UserName = "taskmanagerautosending@gmail.com",
+            Password = "1234ABC!"
         };
 
         smtpClient.EnableSsl = true;

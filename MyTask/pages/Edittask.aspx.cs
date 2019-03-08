@@ -46,7 +46,8 @@ public partial class pages_Edittask : System.Web.UI.Page
     {
         using (SqlConnection con=new SqlConnection(conString))
         {
-            string query = "UPDATE tbltaskdata SET Description=@Description, Category=@Category, Priority=@Priority  WHERE username=@username";
+            String Id = Session["EditId"].ToString();
+            string query = "UPDATE tbltaskdata SET Description=@Description, Category=@Category, Priority=@Priority  WHERE  id='" + Id + "' AND username=@username";
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.Parameters.AddWithValue("@Description", TextBox1.Text);
            

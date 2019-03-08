@@ -41,7 +41,7 @@
                                 <button type="button" class="close" data-dismiss="alert">&times;</button>
                                 <strong>User name or password are incorrect </strong>
                                 <br />
-                                please again.
+                                please try again.
                        
                             </div>
                         </asp:Panel>

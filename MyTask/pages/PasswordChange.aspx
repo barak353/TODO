@@ -13,12 +13,12 @@
                  <form runat="server" action="" method="post" name="Login_Form" class="form-signin" style="background-image : url(images/bk.jpg)" >
                     <!--<hr class="colorgraph">-->
                     <br>
-                    <h1 style="color:red" class="form-signin-heading">Enter Password and new Password</h1>
+                    <h1 style="color:red" class="form-signin-heading">Enter new Password</h1>
                     <center>
-                    <input type="password" id="regPassword" class="form-control" name="password" placeholder="Password" required autofocus="" />
-                <input type="password" id="regRePassword" class="form-control" name="repassword" placeholder="Password Verification" required autofocus="" />
+                    <input type="password" id="regPassword" class="form-control" name="password" placeholder="Insert new password" required autofocus="" />
+                <input type="password" id="regRePassword" class="form-control" name="repassword" placeholder="Insert new password again" required autofocus="" />
 
-                   <asp:Button ID="Save" runat="server" name="Submit" OnClick="Save_Click" CommandName="ThisBtnClick" Text="Save" class="btn btn-lg btn-primary btn-block" style="background-color:#6f0f62" />
+                   <asp:Button ID="Save" runat="server" name="Submit" OnClick="Save_Click" CommandName="ThisBtnClick" Text="Save" class="btn btn-lg btn-primary btn-block" style="background-color:#e62e00" />
                   
                     </center>
                  <asp:Panel runat="server" ID="linknotvalid" Visible="false">

@@ -60,9 +60,9 @@
                                 <div class="col-md-4 col-md-offset-1" style="margin-top:20px">
                                 <asp:DropDownList ID="DropDownList1" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" AutoPostBack="true" runat="server" CssClass="form-control">
                                     <asp:ListItem Text="Select Category" Value="Select Category"></asp:ListItem>
-                                    <asp:ListItem Text="Private" Value="Home"></asp:ListItem>
-                                    <asp:ListItem Text="School" Value="Projects"></asp:ListItem>
-                                    <asp:ListItem Text="Work" Value="Bills"></asp:ListItem>
+                                    <asp:ListItem Text="Private" Value="Private"></asp:ListItem>
+                                    <asp:ListItem Text="School" Value="School"></asp:ListItem>
+                                    <asp:ListItem Text="Work" Value="Work"></asp:ListItem>
                                 </asp:DropDownList>
                             </div>
                                <div class="col-md-1 " style="margin-top:25px">
