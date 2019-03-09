@@ -27,7 +27,7 @@
                             Password Reset Link has expired or is invalid
                         </div>
                     </asp:Panel>
-                    <asp:Panel runat="server" ID="passwordreset" Visible="false">
+                    <asp:Panel runat="server" ID="passwordchanged" Visible="false">
                         <div class="alert alert-dismissible alert-success">
                             <button type="button" class="close" data-dismiss="alert">&times;</button>
                             Password Changed Successfully

@@ -19,7 +19,7 @@ public partial class pages_ResetPassword : System.Web.UI.Page
             if (!IsPasswordLinkValid())
             {
                 linknotvalid.Visible = true;
-                passwordreset.Visible = false;
+                passwordchanged.Visible = false;
                 Save.Enabled = false;
             }
            
@@ -44,7 +44,7 @@ public partial class pages_ResetPassword : System.Web.UI.Page
         }
     }
 
-    private bool UserPasswordReset()
+    private bool UserPasswordChanged()
     {
         String Password = Request.Form["password"]; ;
         String RePassword = Request.Form["repassword"];
@@ -63,7 +63,7 @@ public partial class pages_ResetPassword : System.Web.UI.Page
             }
         };
 
-        return ExecuteStoreProcedure("sp_passwordreset", paramList);
+        return ExecuteStoreProcedure("sp_PasswordChanged", paramList);
     }
 
     private bool IsPasswordLinkValid()
@@ -82,15 +82,15 @@ public partial class pages_ResetPassword : System.Web.UI.Page
 
     protected void Save_Click(object sender, EventArgs e)
     {
-        if (UserPasswordReset())
+        if (UserPasswordChanged())
         {
             linknotvalid.Visible = false;
-            passwordreset.Visible = true;
+            passwordchanged.Visible = true;
         }
         else
         {
             linknotvalid.Visible = true;
-            passwordreset.Visible = false;
+            passwordchanged.Visible = false;
         }
     }
 }
