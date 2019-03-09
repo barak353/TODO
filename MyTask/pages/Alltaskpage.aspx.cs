@@ -24,9 +24,9 @@ public partial class pages_Alltaskpage : System.Web.UI.Page
         }
     }
 
-    protected void AddTask_Click(object sender, EventArgs e)
+    protected void CreateTask_Click(object sender, EventArgs e)
     {
-        Response.Redirect("Addtask.aspx");
+        Response.Redirect("CreateTask.aspx");
     }
     private void GetData()
     {

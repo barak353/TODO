@@ -8,7 +8,7 @@ using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 
-public partial class pages_Addtask : System.Web.UI.Page
+public partial class pages_Createtask : System.Web.UI.Page
 {
     string conString = ConfigurationManager.ConnectionStrings["sqlapp"].ConnectionString;
     protected void Page_Load(object sender, EventArgs e)
@@ -22,7 +22,7 @@ public partial class pages_Addtask : System.Web.UI.Page
         }
     }
 
-    protected void AddTask(object sender, EventArgs e)
+    protected void CreateTask(object sender, EventArgs e)
     {
         string Description = Request.Form["description"];
       

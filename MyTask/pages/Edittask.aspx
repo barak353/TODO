@@ -4,7 +4,7 @@
     <!--<%@ MasterType VirtualPath="~/MasterPage.master" %>-->
     <script src="MyTaskScript/script.js"></script>
     <link rel="stylesheet" href="css/home.css">
-    <asp:Panel runat="server" ID="addtask" Visible="true">
+    <asp:Panel runat="server" ID="createtask" Visible="true">
         <div class="container">
             <div class="wrapper">
                 

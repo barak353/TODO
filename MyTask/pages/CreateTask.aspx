@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Addtask.aspx.cs" Inherits="pages_Addtask" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Createtask.aspx.cs" Inherits="pages_Createtask" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <!--<%@ MasterType VirtualPath="~/MasterPage.master" %>-->
     <script src="MyTaskScript/script.js"></script>
     <link rel="stylesheet" href="css/home.css">
-    <asp:Panel runat="server" ID="addtask" Visible="true">
+    <asp:Panel runat="server" ID="createtask" Visible="true">
         <div class="container">
             <div class="wrapper">
                 <html>
@@ -30,7 +30,7 @@
                                 <asp:ListItem Value="Medium" Text="Medium"></asp:ListItem>
                                 <asp:ListItem Value="Minimum" Text="Minimum"></asp:ListItem>
                             </asp:DropDownList>
-                       <asp:Button runat="server" class="btn btn-lg btn-primary btn-block" OnClick="AddTask" style="background-color:#e62e00" name="Submit" value="Create" type="Submit" Text="Create"></asp:Button>
+                       <asp:Button runat="server" class="btn btn-lg btn-primary btn-block" OnClick="CreateTask" style="background-color:#e62e00" name="Submit" value="Create" type="Submit" Text="Create"></asp:Button>
                  
                       
                         

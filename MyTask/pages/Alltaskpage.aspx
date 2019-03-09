@@ -67,7 +67,7 @@
                             </div>
                                <div class="col-md-1 " style="margin-top:25px">
                                   
-                                        <asp:Button ID="AddTask" class="btn btn-sm btn-primary btn-create" OnClick="AddTask_Click" Style="background-color: #e62e00" runat="server" Text="New Task" />
+                                        <asp:Button ID="CreateTask" class="btn btn-sm btn-primary btn-create" OnClick="CreateTask_Click" Style="background-color: #e62e00" runat="server" Text="New Task" />
 
                                </div>
                                     
