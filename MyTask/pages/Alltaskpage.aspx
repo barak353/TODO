@@ -67,7 +67,7 @@
                             </div>
                                <div class="col-md-1 " style="margin-top:25px">
                                   
-                                        <asp:Button ID="CreateTask" class="btn btn-sm btn-primary btn-create" OnClick="CreateTask_Click" Style="background-color: #e62e00" runat="server" Text="New Task" />
+                                        <asp:Button ID="CreateTask" class="btn btn-sm btn-primary btn-create" OnClick="CreateTask_Click" Style="background-color: #e62e00" runat="server" Text="Create Task" />
 
                                </div>
                                     
@@ -83,7 +83,7 @@
                                 <div class="panel-body">
                             <asp:GridView ID="GridViewTasks" OnRowEditing="GridViewTasks_RowEditing" OnRowDeleting="GridViewTasks_RowDeleting" runat="server" AutoGenerateColumns="False" OnRowCommand="GridViewTasks_RowCommand">
                                 <Columns>
-                                    <asp:TemplateField HeaderText="Mark">
+                                    <asp:TemplateField HeaderText="Is task done?">
                                         <ItemTemplate>
                                             <asp:CheckBox ID="CheckBox1" runat="server" Checked='false' AutoPostBack="true" OnCheckedChanged="CheckBox1_CheckedChanged" />
                                         </ItemTemplate>
@@ -92,7 +92,7 @@
                                     <asp:BoundField DataField="Description" HeaderText="Task Description" />
                                     <asp:BoundField DataField="Category" HeaderText="Category" />
                                     <asp:BoundField DataField="Priority" HeaderText="Urgency" />
-                                    <asp:TemplateField HeaderText="Edit or Delete">
+                                    <asp:TemplateField HeaderText="">
                                         <ItemTemplate>
                                             <asp:Button ID="Edit" CssClass="btn btn-danger" CommandName="Edit" CommandArgument='<%#Eval("id")%>' runat="server" Text="Edit" />
                                             <asp:Button ID="Del" CssClass="btn btn-danger" CommandName="Delete" CommandArgument='<%#Eval("id")%>' runat="server" Text="Delete" />

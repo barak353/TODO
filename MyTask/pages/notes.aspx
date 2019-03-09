@@ -39,7 +39,7 @@
                                 </div> 
                                 <div>
                                      <div class="col-md-2 text-center ">
-                                    <button type="button" class="btn btn-sm btn-primary btn-create"  style="background-color:#e62e00"  onclick="newNote()">New Task</button>
+                                    <button type="button" class="btn btn-sm btn-primary btn-create"  style="background-color:#e62e00"  onclick="newNote()">Create Task</button>
                                 </div>
                                 </div>
                                 
