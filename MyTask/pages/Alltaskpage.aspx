@@ -52,9 +52,9 @@
                                 <div class="col-md-4 col-md-offset-1" style="margin-top:20px">
                                 <asp:DropDownList ID="DropDownList2" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged" AutoPostBack="true" runat="server" CssClass="form-control">
                                     <asp:ListItem Text="Select Urgency" Value="Select Priority"></asp:ListItem>
-                                    <asp:ListItem Text="High" Value="High"></asp:ListItem>
-                                    <asp:ListItem Text="Normal" Value="Normal"></asp:ListItem>
-                                    <asp:ListItem Text="Low" Value="Low"></asp:ListItem>
+                                    <asp:ListItem Text="Maximum" Value="Maximum"></asp:ListItem>
+                                    <asp:ListItem Text="Medium" Value="Medium"></asp:ListItem>
+                                    <asp:ListItem Text="Minimum" Value="Minimum"></asp:ListItem>
                                 </asp:DropDownList>
                             </div>
                                 <div class="col-md-4 col-md-offset-1" style="margin-top:20px">

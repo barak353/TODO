@@ -27,9 +27,9 @@
                             </asp:DropDownList>
                       <asp:DropDownList ID="DropDownList1" CssClass="form-control" style="display: inline-block; margin-top: 10px" runat="server">
                           <asp:ListItem Text="Select Urgency" Value="Select Priority"></asp:ListItem>
-                                <asp:ListItem Value="High" Text="High"></asp:ListItem>
-                                <asp:ListItem Value="Normal" Text="Normal"></asp:ListItem>
-                                <asp:ListItem Value="Low" Text="Low"></asp:ListItem>
+                                <asp:ListItem Value="Maximum" Text="Maximum"></asp:ListItem>
+                                <asp:ListItem Value="Medium" Text="Medium"></asp:ListItem>
+                                <asp:ListItem Value="Minimum" Text="Minimum"></asp:ListItem>
                             </asp:DropDownList>
                       
                  <asp:Button ID="Button1" runat="server" class="btn btn-lg btn-primary btn-block" style="background-color:#e62e00" OnClick="Updatetask" Text="Update" />
