@@ -26,7 +26,7 @@
                                 <asp:ListItem Text="Work" Value="Work"></asp:ListItem>
                             </asp:DropDownList>
                       <asp:DropDownList ID="DropDownList1" CssClass="form-control" style="display: inline-block; margin-top: 10px" runat="server">
-                          <asp:ListItem Text="Select Priority" Value="Select Priority"></asp:ListItem>
+                          <asp:ListItem Text="Select Urgency" Value="Select Priority"></asp:ListItem>
                                 <asp:ListItem Value="High" Text="High"></asp:ListItem>
                                 <asp:ListItem Value="Normal" Text="Normal"></asp:ListItem>
                                 <asp:ListItem Value="Low" Text="Low"></asp:ListItem>

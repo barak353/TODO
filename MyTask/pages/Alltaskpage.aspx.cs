@@ -102,7 +102,7 @@ public partial class pages_Alltaskpage : System.Web.UI.Page
 
         }
     }
-    private void GetPriorityData()
+    private void GetUrgencyData()
     {
         using (SqlConnection con = new SqlConnection(conString))
         {
@@ -125,7 +125,7 @@ public partial class pages_Alltaskpage : System.Web.UI.Page
         }
         else
         {
-            GetPriorityData();
+            GetUrgencyData();
         }
     }
 

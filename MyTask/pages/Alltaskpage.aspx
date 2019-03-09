@@ -51,7 +51,7 @@
                             <div class="container">
                                 <div class="col-md-4 col-md-offset-1" style="margin-top:20px">
                                 <asp:DropDownList ID="DropDownList2" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged" AutoPostBack="true" runat="server" CssClass="form-control">
-                                    <asp:ListItem Text="Select Priority" Value="Select Priority"></asp:ListItem>
+                                    <asp:ListItem Text="Select Urgency" Value="Select Priority"></asp:ListItem>
                                     <asp:ListItem Text="High" Value="High"></asp:ListItem>
                                     <asp:ListItem Text="Normal" Value="Normal"></asp:ListItem>
                                     <asp:ListItem Text="Low" Value="Low"></asp:ListItem>
@@ -91,7 +91,7 @@
                                     <asp:BoundField DataField="Id" HeaderText="ID" />
                                     <asp:BoundField DataField="Description" HeaderText="Task Description" />
                                     <asp:BoundField DataField="Category" HeaderText="Category" />
-                                    <asp:BoundField DataField="Priority" HeaderText="Priority" />
+                                    <asp:BoundField DataField="Priority" HeaderText="Urgency" />
                                     <asp:TemplateField HeaderText="Edit or Delete">
                                         <ItemTemplate>
                                             <asp:Button ID="Edit" CssClass="btn btn-danger" CommandName="Edit" CommandArgument='<%#Eval("id")%>' runat="server" Text="Edit" />

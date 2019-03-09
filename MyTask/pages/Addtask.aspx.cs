@@ -27,12 +27,12 @@ public partial class pages_Addtask : System.Web.UI.Page
         string Description = Request.Form["description"];
       
         string Category = DropDownListcategorizedtask.SelectedValue;
-        string Priority = DropDownList1.SelectedValue;
+        string Urgency = DropDownList1.SelectedValue;
         string username = Session["username"].ToString();
 
         using (SqlConnection con=new SqlConnection(conString))
         {
-            SqlCommand cmd = new SqlCommand("Insert into tbltaskdata(Description,Category,Priority,username, Mark) values('" + Description+"','"+Category+"','"+Priority+"','"+username+"','false')",con);
+            SqlCommand cmd = new SqlCommand("Insert into tbltaskdata(Description,Category,Priority,username, Mark) values('" + Description+"','"+Category+"','"+ Urgency + "','"+username+"','false')",con);
             con.Open();
             cmd.ExecuteNonQuery();
             Response.Redirect("Alltaskpage.aspx");
