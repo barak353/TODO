@@ -8,7 +8,7 @@ using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 
-public partial class pages_PasswordChange : System.Web.UI.Page
+public partial class pages_ResetPassword : System.Web.UI.Page
 {
     String conString = ConfigurationManager.ConnectionStrings["sqlapp"].ConnectionString;
 
@@ -19,7 +19,7 @@ public partial class pages_PasswordChange : System.Web.UI.Page
             if (!IsPasswordLinkValid())
             {
                 linknotvalid.Visible = true;
-                passwordchanged.Visible = false;
+                passwordreset.Visible = false;
                 Save.Enabled = false;
             }
            
@@ -44,7 +44,7 @@ public partial class pages_PasswordChange : System.Web.UI.Page
         }
     }
 
-    private bool UserPasswordChanged()
+    private bool UserPasswordReset()
     {
         String Password = Request.Form["password"]; ;
         String RePassword = Request.Form["repassword"];
@@ -63,7 +63,7 @@ public partial class pages_PasswordChange : System.Web.UI.Page
             }
         };
 
-        return ExecuteStoreProcedure("sp_PasswordChanged", paramList);
+        return ExecuteStoreProcedure("sp_passwordreset", paramList);
     }
 
     private bool IsPasswordLinkValid()
@@ -82,15 +82,15 @@ public partial class pages_PasswordChange : System.Web.UI.Page
 
     protected void Save_Click(object sender, EventArgs e)
     {
-        if (UserPasswordChanged())
+        if (UserPasswordReset())
         {
             linknotvalid.Visible = false;
-            passwordchanged.Visible = true;
+            passwordreset.Visible = true;
         }
         else
         {
             linknotvalid.Visible = true;
-            passwordchanged.Visible = false;
+            passwordreset.Visible = false;
         }
     }
 }

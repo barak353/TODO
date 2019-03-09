@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="PasswordChange.aspx.cs" Inherits="pages_PasswordChange" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="ResetPassword.aspx.cs" Inherits="pages_ResetPassword" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="Server">
 
@@ -27,7 +27,7 @@
                             Password Reset Link has expired or is invalid
                         </div>
                     </asp:Panel>
-                    <asp:Panel runat="server" ID="passwordchanged" Visible="false">
+                    <asp:Panel runat="server" ID="passwordreset" Visible="false">
                         <div class="alert alert-dismissible alert-success">
                             <button type="button" class="close" data-dismiss="alert">&times;</button>
                             Password Changed Successfully

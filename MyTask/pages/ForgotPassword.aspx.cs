@@ -60,7 +60,7 @@ public partial class pages_ForgotPassword : System.Web.UI.Page
         sbEmailBody.Append("Dear " + UserName + "<br/<br/>");
         sbEmailBody.Append("Please click on the following link to reset your password");
         sbEmailBody.Append("<br/>");
-        sbEmailBody.Append("http://localhost:50229/pages/PasswordChange?uid=" + UniqueId);
+        sbEmailBody.Append("http://localhost:50229/pages/ResetPassword?uid=" + UniqueId);
         sbEmailBody.Append("<br/><br/>");
         sbEmailBody.Append("<b>Task Management </b>");
 
