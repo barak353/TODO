@@ -58,11 +58,10 @@ public partial class pages_PasswordReset : System.Web.UI.Page
 
         StringBuilder sbEmailBody = new StringBuilder();
         sbEmailBody.Append("Dear " + UserName + "<br/<br/>");
-        sbEmailBody.Append("Please click on the following link to reset your password");
+        sbEmailBody.Append("To reset your password please click on the link below:");
         sbEmailBody.Append("<br/>");
         sbEmailBody.Append("http://localhost:50229/pages/ResetPassword?uid=" + UniqueId);
         sbEmailBody.Append("<br/><br/>");
-        sbEmailBody.Append("<b>Task Management </b>");
 
         mailMessage.IsBodyHtml = true;
 
