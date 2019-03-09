@@ -22,9 +22,9 @@
 
                     <asp:Button runat="server" class="btn btn-lg btn-primary btn-block" style="background-color:#e62e00" name="Submit" value="Login" type="Submit" Text="Login" OnClick="Login" />
                  
-                        To register new account <a href="pages/register.aspx">click here!</a>
+                        To register new account <a href="pages/register.aspx">click here</a>
                         <br />
-                           To reset your password <a href="pages/ForgotPassword">click Here</a>
+                           To reset your password <a href="pages/PasswordReset">click Here</a>
                         
                     </center>
                     <asp:Panel runat="server" ID="alertMsg" Visible="false">

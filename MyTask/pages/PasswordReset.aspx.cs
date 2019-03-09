@@ -10,7 +10,7 @@ using System.Data;
 using System.Net.Mail;
 using System.Text;
 
-public partial class pages_ForgotPassword : System.Web.UI.Page
+public partial class pages_PasswordReset : System.Web.UI.Page
 {
     String conString = ConfigurationManager.ConnectionStrings["sqlapp"].ConnectionString;
     protected void Page_Load(object sender, EventArgs e)
